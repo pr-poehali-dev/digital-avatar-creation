@@ -1,0 +1,37 @@
+{
+  "appId": "com.digitalavatar.app",
+  "productName": "Цифровой Аватар",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "public/**/*"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/favicon.svg"
+  },
+  "mac": {
+    "target": "dmg",
+    "category": "public.app-category.productivity",
+    "icon": "public/favicon.svg"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "category": "Utility",
+    "icon": "public/favicon.svg"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}

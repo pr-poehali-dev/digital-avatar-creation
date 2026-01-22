@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 builds
+
+# Electron
+release/
+out/
+*.exe
+*.dmg
+*.AppImage
